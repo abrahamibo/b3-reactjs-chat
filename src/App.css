@@ -21,7 +21,45 @@
 .App-link {
   color: #61dafb;
 }
+h3 {
+  margin: 40px 0 0;
+}
+.Chat ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  overflow-y: scroll;
+}
+.Chat li{
+  max-width: 40%;
+}
+.Chat li.me {
+  align-self: flex-end;
+  background-color: aliceblue;
+  margin: 0 10px;
+}
+.Chat li.nome {
+  align-self: flex-start;
+  background-color: azure;
+  margin: 0 10px;
+}
+.Chat a {
+  color: #42b983;
+}
+.list-item {
 
+  margin-right: 10px;
+}
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
